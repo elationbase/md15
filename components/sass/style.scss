@@ -1,0 +1,21 @@
+// style.scss
+// ==============
+ 
+//Compass imports
+@import "compass";
+@import "compass/reset";
+
+//Font @imports
+@import "elationbase";
+
+//Core partials
+@import "variables";
+@import "mixins";
+@import "modules";
+@import "base";
+
+//Page partials
+@import "header";
+@import "sec1";
+@import "sec2";
+@import "port";

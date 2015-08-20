@@ -30,11 +30,8 @@ $ NODE_ENV=production gulp
 ```
 
 ### License
-Copyright (c) 2015 Elation Base Licensed under the MIT license.
-Front-end Developer Workflow with Gulp
-https://github.com/elationbase/workflow/
-<a href="http://elationbase.com/">http://elationbase.com/</a>
-Copyright 2015, elationbase
-Start up front end project with HTML, SASS, JS, JSON, jQuery. Including 2 build environments (development and production).
-Free to use under the MIT license.
+Copyright (c) 2015 Elation Base Licensed under the MIT license.<br>
+https://github.com/elationbase/md15/<br>
+<a href="http://elationbase.com/">http://elationbase.com/</a><br>
+Copyright 2015, elationbase<br>
 http://www.opensource.org/licenses/mit-license.php

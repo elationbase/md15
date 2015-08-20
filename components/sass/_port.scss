@@ -1,0 +1,150 @@
+// _port.scss
+#port { 
+	min-height: calc(600vh - 200px);
+	background-color: $light;
+	.pro { 
+		left: 110%;
+		width: 200%;
+		height: 100%;
+		position: absolute;
+		background: url(/img/pattern-star.png);   
+		li {
+			width: 12.5%;
+			height: 50%;
+			//padding: 40px 40px 0 0;
+			padding: 0 0 1px 1px;
+			float: left;
+			overflow: hidden;
+			.block {
+				position: relative;
+				display: block;
+				height: 100%;
+				overflow: hidden;
+				cursor: pointer;
+				.img {
+					background: url(/img/bgs/img5.png) center center #000;
+					background-size: cover;
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					transition: all 1s ease;
+					border-radius: 3px;
+					opacity: 1;
+					transform: scale(1);
+					-webkit-backface-visibility: hidden;
+				}
+				.data {
+					position: absolute;
+					top: 20px;
+					right: 20px;
+					bottom: 20px;
+					left: 20px;
+					padding: 20px;
+					background-color: rgba( $brandDark, .9 );
+					opacity: 0;
+					border-radius: 50%;
+					transform: scale(0.1);
+					overflow: hidden;
+					transition: all 0.5s ease-in;
+					h3 {
+						color: $white;
+						opacity: 0;
+						transition: all 0.5s ease;
+						transition-delay: 0.5s;
+						transform: translateX(50px);
+					}
+					p {
+						opacity: 0;
+						transition: all 0.5s ease;
+						transition-delay: 1s;
+						transform: translateX(50px);
+					}
+				}
+				&:hover {
+					.img {
+						transform: scale(1.2);
+						filter: blur(5px);
+					}
+					.data {
+						opacity: 1;
+						border-radius: 0%;
+						transform: scale(1);
+						h3 {
+							opacity: 1;
+							transform: translateX(0);
+						}
+						p {
+							opacity: 1;
+							transform: translateX(0);
+						}
+					}
+				}
+			}
+			.block.off {
+				cursor: default;
+				.img {
+					opacity: 0;
+					transform: scale(0.1);
+				}
+				.data {
+					opacity: 0 !important;
+				}
+			}
+		}
+	}
+}
+aside {
+	top: 40px;
+	right: 40px;
+	bottom: 40px;
+	left: 300px;
+	position: fixed;
+	z-index: 99;
+	display: none;
+	.wp {
+		padding: 40px;
+	}
+}
+.aslf {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0%;
+	width: 100% !important;
+	background: #E0E0E0;
+	overflow: auto;
+	display: none;
+	.prev li {
+		&:last-child {
+			img {
+				padding-bottom: 0;
+			}
+		}
+		img {
+		    max-width: 100%;
+			padding-bottom: 40px;
+		}
+	}
+}
+.asrt {
+	position: absolute;
+	top: 0;
+	left: 60%;
+	bottom: 0;
+	width: 40%;
+	background: $light;
+	display: none;
+	.close {
+		position: absolute;
+		right: 20px;
+		font-size: 50px;
+		top: 10px;
+		cursor: pointer;
+	}
+}
+
+.slimScrollBar {
+	cursor: grab;
+}

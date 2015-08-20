@@ -1,0 +1,47 @@
+header { 
+	position: fixed; 
+	top: 40px; bottom: 40px; left: 40px; 
+	width: 260px;
+	display: block;
+	background-color: $white; 
+	z-index: 105; 
+	.logo {
+		width: 130px;
+		padding: 40px 0;
+	}
+	nav {
+		margin-top: 60px; 
+		a {
+			color: $brandDark;
+			text-decoration: none;
+			padding: 7px 0;
+			display: block;
+			font-size: 26px;
+			&:hover {
+				color: $brandBlue;
+			}
+		}
+		a.active {
+			color: $brandOrange;
+		}
+	}
+	.bottom {
+		position: absolute;
+		bottom: 0;
+		font-weight: 400;
+		font-size: 14px;
+		.media {
+			font-size: 13px;
+			text-transform: uppercase;
+			text-align: center;
+			li {
+				display: inline-block;
+				a {
+					padding: 0 5px;
+					color: $brandDark;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

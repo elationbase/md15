@@ -1,0 +1,77 @@
+// _sec2.scss
+#sec2 { 
+	.pill li {
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: 400;
+		width: 100%;
+		max-width: 80px;
+		height: 80px;
+		line-height: 12px;
+		margin: 10px;
+		float: left;
+		display: block;
+		text-align: center;
+		cursor: pointer;
+		position: relative;
+		span {
+			position: absolute;
+			top: 0; left: 0;
+			width: 80px;
+			height: 80px;
+			border-radius:50%;
+			border: 1px solid $brandBlue;
+			padding: 35px 5px 5px 5px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			transition: all 0.5s ease;
+			&:hover {
+				transform: rotate(360deg) scale(1.2);
+				background: $brandBlue;
+				color: $white;
+			}
+		}
+	}
+	.pill li.off span {
+		transform: rotate(360deg) scale(8);
+		opacity: 0;
+		background: $brandBlue;
+	}
+	.pill li.on span {
+		animation-name: example;
+		animation-duration: 4s;
+		position: fixed;
+		height: 100%;
+	}
+}   
+
+
+
+/* The animation code */
+@keyframes example {
+    0%   {
+		//transform: rotate(360deg) scale(1.2);
+		color: $white;
+		background: $brandBlue;
+		border-radius: 50%;
+	}
+    25%  {
+		left: 0;
+		color: $white;
+		background: $brandBlue;
+		border-radius: 0;
+	}
+    50%  {
+		width: 100%;
+		color: $white;
+		background: $brandBlue;
+		border-radius: 0;
+	}
+    100% {
+		width: 100%;
+		height: 100%;
+		color: $white;
+		background: $brandBlue;
+		border-radius: 0;
+	}
+}

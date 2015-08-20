@@ -1,0 +1,113 @@
+// remap jQuery to $
+(function($){
+	
+	var scroller = function() {
+		var scrollVar = $(window).scrollTop();
+		var winH = $(window).height();
+		var winW = $(window).width();
+		if (scrollVar > 0) {
+			$('.bgimg').css({
+				'-webkit-filter': 'blur(' + Math.round((scrollVar - (winH/5)) / 50) + 'px)',
+				'opacity': 1-((scrollVar-(winH/5))/1000)
+			});
+			$('.logo').css({
+				'opacity': 1-((scrollVar-(winH/5))/500),
+				'top': (scrollVar *3) /2,
+				'-webkit-filter': 'blur(' + Math.round((scrollVar - (winH/5)) / 50) + 'px)'
+			});
+			var sec3 = $('#sec3')
+			var sec3Y = sec3.offset().top;
+			if (scrollVar > sec3Y) {			
+				sec3.children('.wrap').css({'position': 'fixed'}).children('.pro').css({
+					//'left': 1-((scrollVar-winW)/2)*4
+					'left': 1-(scrollVar-sec3Y) + winW
+				});
+				if (scrollVar > (sec3Y*3) + winH) {
+					sec3.children('.wrap').css({
+						'left': 40,
+						'position': 'absolute'
+					});
+				}
+			} else {
+				sec3.children('.wrap').css({
+					'left': 40,
+					'position': 'absolute'
+				});
+			}
+		} else {
+			$('.bgimg').css({
+				'-webkit-filter': 'blur(0px)',
+				'opacity': 1
+			});
+			$('.logo').css({
+				'opacity': 1,
+				'top': 0,
+				'-webkit-filter': 'blur(0px)'
+			});
+		}
+	}
+	
+	var nextItem = function(i) {
+		setTimeout(function(){ 
+			i.eq(0).removeClass('off');
+			nextItem(i.slice(1));
+		}, 300);
+	}
+
+	var shuffle = function(a) {
+		var j, // Random position
+			x, // Last item
+			i = a.length; // Iterator
+		// Loop through the array
+		while(i) {
+			// Select a random position
+			j = (Math.random() * i) | 0;
+			// Get the last item in the array
+			x = a[--i];
+			// Swap the last item with the item at the selected position
+			a[i] = a[j];
+			a[j] = x;
+		} return a;
+	}
+	
+	
+	/* trigger when page is ready */
+	$(document).ready(function (){
+		scroller();
+		
+		// Window Scroll Event (Compatible with IOS)
+		var scrollCount = 0;
+		window.addEventListener( "scroll", function( event ) {
+			scroller();
+			scrollCount++;
+		});
+		$(".pill li").on('click', this, function(e){
+			$(this).toggleClass('on');
+		});
+		/*
+			Select random Skills pill
+		*/
+		var items = $(".pill li");
+		items.addClass('off');
+		shuffle(items);
+		nextItem(items);
+
+		
+	
+	});
+	
+	
+	
+	$(window).load(function() {
+		
+	});
+	
+	$(window).resize(function() {
+		scroller();
+	});
+
+})(window.jQuery);
+
+
+
+

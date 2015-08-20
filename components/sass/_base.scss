@@ -1,0 +1,114 @@
+// _base.scss
+// ==============
+body {
+	background: $white;
+	font-family: $font;
+	font-size: 1.3em;
+	font-weight: 200;
+	margin: 40px;
+}
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+a {
+	transition: all 0.5s ease;
+}
+h1 {
+	font-size: 42px;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 26px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+.relative {
+	position: relative;
+}
+.fixed {
+	position: fixed;
+}
+.hidden {
+	overflow: hidden;
+}
+.tm {
+	position: fixed; 
+	top: 0; right: 0; left: 0; 
+	height: 40px;
+	background-color: $white;
+	z-index: 104; 
+}
+.lm {
+	position: fixed; 
+	top: 0; bottom: 0; left: 0; 
+	width: 40px;
+	background-color: $white;
+	z-index: 103; 
+}
+.rm {
+	position: fixed; 
+	top: 0; bottom: 0; right: 0; 
+	width: 40px;
+	background-color: $white;
+	z-index: 102; 
+}
+.bm {
+	position: fixed; 
+	bottom: 0; right: 0; left: 0; 
+	height: 40px;
+	background-color: $white;
+	z-index: 101; 
+}
+.wp {
+	position: relative;
+	width: 100%;
+	padding-left: 260px;
+}
+section { 
+	min-height: 100vh; 
+	min-height: calc(100vh - 80px); 
+	overflow: hidden; 
+	position: relative; 
+	background: $light;
+	.bgimg { 
+		background-attachment: fixed; 
+		background-size: cover; 
+		position: absolute; 
+		top: 0; right: 0; bottom: 0; left: 0; 
+		z-index: 1;
+	}
+	.pat { 
+		background: url(../img/pat.png); 
+		position: absolute; 
+		top: 0; right: 0; bottom: 0; left: 0; 
+		z-index: 2;
+	}
+	h1 {
+		text-align: center;
+		padding: 10px;
+		color: $brandLight;
+	}
+	.wrap {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		bottom: 40px;
+		left: 40px;
+		z-index: 10;
+	}
+}
+#add {
+	.bgimg { 
+		background-image: url(../img/bgs/img3.jpg);
+		background-color: $brandDark;
+	}
+}

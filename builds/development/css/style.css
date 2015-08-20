@@ -1,0 +1,630 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Elation Base';
+  src: url("fonts/elationbase/eb-light-webfont.eot");
+  src: url("fonts/elationbase/eb-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/elationbase/eb-light-webfont.woff2") format("woff2"), url("fonts/elationbase/eb-light-webfont.woff") format("woff"), url("fonts/elationbase/eb-light-webfont.ttf") format("truetype"), url("fonts/elationbase/eb-light-webfont.svg#eb_light") format("svg");
+  font-weight: 200;
+  font-style: thin;
+}
+@font-face {
+  font-family: 'Elation Base';
+  src: url("fonts/elationbase/eb-regular-webfont.eot");
+  src: url("fonts/elationbase/eb-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/elationbase/eb-regular-webfont.woff2") format("woff2"), url("fonts/elationbase/eb-regular-webfont.woff") format("woff"), url("fonts/elationbase/eb-regular-webfont.ttf") format("truetype"), url("fonts/elationbase/eb-regular-webfont.svg#eb_regular") format("svg");
+  font-weight: normal;
+  font-style: 400;
+}
+@font-face {
+  font-family: 'Elation Base';
+  src: url("fonts/elationbase/eb-bold-webfont.eot");
+  src: url("fonts/elationbase/eb-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/elationbase/eb-bold-webfont.woff2") format("woff2"), url("fonts/elationbase/eb-bold-webfont.woff") format("woff"), url("fonts/elationbase/eb-bold-webfont.ttf") format("truetype"), url("fonts/elationbase/eb-bold-webfont.svg#eb_bold") format("svg");
+  font-weight: 700;
+  font-style: bold;
+}
+.flex {
+  -webkit-box-flex: 8;
+  -webkit-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  box-shadow: 0 0 50px #000;
+  -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+}
+
+:-webkit-full-screen a {
+  -webkit-transition: -webkit-transform 1s ease;
+          transition: transform 1s ease;
+}
+
+:-moz-full-screen a {
+  transition: transform 1s ease;
+}
+
+:-ms-fullscreen a {
+  transition: transform 1s ease;
+}
+
+:fullscreen a {
+  -webkit-transition: -webkit-transform 1s ease;
+          transition: transform 1s ease;
+}
+
+body {
+  background: #FFFFFF;
+  font-family: "Elation Base", sans-serif;
+  font-size: 1.3em;
+  font-weight: 200;
+  margin: 40px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.tm {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  background-color: #FFFFFF;
+  z-index: 104;
+}
+
+.lm {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  background-color: #FFFFFF;
+  z-index: 103;
+}
+
+.rm {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  background-color: #FFFFFF;
+  z-index: 102;
+}
+
+.bm {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  background-color: #FFFFFF;
+  z-index: 101;
+}
+
+.wp {
+  position: relative;
+  width: 100%;
+  padding-left: 260px;
+}
+
+section {
+  min-height: 100vh;
+  min-height: calc(100vh - 80px);
+  overflow: hidden;
+  position: relative;
+  background: #F1F1F1;
+}
+section .bgimg {
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+section .pat {
+  background: url(../img/pat.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+section h1 {
+  text-align: center;
+  padding: 10px;
+  color: #a7a9ac;
+}
+section .wrap {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  bottom: 40px;
+  left: 40px;
+  z-index: 10;
+}
+
+#add .bgimg {
+  background-image: url(../img/bgs/img3.jpg);
+  background-color: #4e6374;
+}
+
+header {
+  position: fixed;
+  top: 40px;
+  bottom: 40px;
+  left: 40px;
+  width: 260px;
+  display: block;
+  background-color: #FFFFFF;
+  z-index: 105;
+}
+header .logo {
+  width: 130px;
+  padding: 40px 0;
+}
+header nav {
+  margin-top: 60px;
+}
+header nav a {
+  color: #4e6374;
+  text-decoration: none;
+  padding: 7px 0;
+  display: block;
+  font-size: 26px;
+}
+header nav a:hover {
+  color: #2cb2c4;
+}
+header nav a.active {
+  color: #e44f26;
+}
+header .bottom {
+  position: absolute;
+  bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+header .bottom .media {
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+}
+header .bottom .media li {
+  display: inline-block;
+}
+header .bottom .media li a {
+  padding: 0 5px;
+  color: #4e6374;
+  text-decoration: none;
+}
+
+#sec1 {
+  background: #3c3e40;
+  margin-bottom: 40px;
+}
+#sec1 .bgimg {
+  background-image: url(../img/bgs/img4.jpg);
+  background-color: #4e6374;
+}
+#sec1 .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+#sec1 .logo {
+  width: 15%;
+  position: absolute;
+  left: 10%;
+  margin-top: 50px;
+}
+#sec1 .copy {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  left: 30%;
+  z-index: 3;
+  text-align: right;
+  color: #fff;
+  text-shadow: 0 0 6px #000;
+}
+#sec1 .copy h1 {
+  color: #2cb2c4;
+  font-size: 60px;
+  border-bottom: 1px solid #2cb2c4;
+  text-align: right;
+}
+#sec1 .copy h2 {
+  color: #a7a9ac;
+  margin: 10px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #a7a9ac;
+}
+#sec1 .copy h2 span {
+  display: block;
+}
+#sec1 .copy h2 span i {
+  color: #e44f26;
+}
+#sec1 .copy p {
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+
+#sec2 .pill li {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 100%;
+  max-width: 80px;
+  height: 80px;
+  line-height: 12px;
+  margin: 10px;
+  float: left;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+#sec2 .pill li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #2cb2c4;
+  padding: 35px 5px 5px 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+#sec2 .pill li span:hover {
+  -webkit-transform: rotate(360deg) scale(1.2);
+      -ms-transform: rotate(360deg) scale(1.2);
+          transform: rotate(360deg) scale(1.2);
+  background: #2cb2c4;
+  color: #FFFFFF;
+}
+#sec2 .pill li.off span {
+  -webkit-transform: rotate(360deg) scale(8);
+      -ms-transform: rotate(360deg) scale(8);
+          transform: rotate(360deg) scale(8);
+  opacity: 0;
+  background: #2cb2c4;
+}
+#sec2 .pill li.on span {
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  position: fixed;
+  height: 100%;
+}
+
+/* The animation code */
+@-webkit-keyframes example {
+  0% {
+    color: #FFFFFF;
+    background: #2cb2c4;
+    border-radius: 50%;
+  }
+  25% {
+    left: 0;
+    color: #FFFFFF;
+    background: #2cb2c4;
+    border-radius: 0;
+  }
+  50% {
+    width: 100%;
+    color: #FFFFFF;
+    background: #2cb2c4;
+    border-radius: 0;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    background: #2cb2c4;
+    border-radius: 0;
+  }
+}
+@keyframes example {
+  0% {
+    color: #FFFFFF;
+    background: #2cb2c4;
+    border-radius: 50%;
+  }
+  25% {
+    left: 0;
+    color: #FFFFFF;
+    background: #2cb2c4;
+    border-radius: 0;
+  }
+  50% {
+    width: 100%;
+    color: #FFFFFF;
+    background: #2cb2c4;
+    border-radius: 0;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    background: #2cb2c4;
+    border-radius: 0;
+  }
+}
+#port {
+  min-height: calc(600vh - 200px);
+  background-color: #F1F1F1;
+}
+#port .pro {
+  left: 110%;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  background: url(/img/pattern-star.png);
+}
+#port .pro li {
+  width: 12.5%;
+  height: 50%;
+  padding: 0 0 1px 1px;
+  float: left;
+  overflow: hidden;
+}
+#port .pro li .block {
+  position: relative;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+#port .pro li .block .img {
+  background: url(/img/bgs/img5.png) center center #000;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+  border-radius: 3px;
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-backface-visibility: hidden;
+}
+#port .pro li .block .data {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  padding: 20px;
+  background-color: rgba(78, 99, 116, 0.9);
+  opacity: 0;
+  border-radius: 50%;
+  -webkit-transform: scale(0.1);
+      -ms-transform: scale(0.1);
+          transform: scale(0.1);
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in;
+          transition: all 0.5s ease-in;
+}
+#port .pro li .block .data h3 {
+  color: #FFFFFF;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transform: translateX(50px);
+      -ms-transform: translateX(50px);
+          transform: translateX(50px);
+}
+#port .pro li .block .data p {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transform: translateX(50px);
+      -ms-transform: translateX(50px);
+          transform: translateX(50px);
+}
+#port .pro li .block:hover .img {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+#port .pro li .block:hover .data {
+  opacity: 1;
+  border-radius: 0%;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+#port .pro li .block:hover .data h3 {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+#port .pro li .block:hover .data p {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+#port .pro li .block.off {
+  cursor: default;
+}
+#port .pro li .block.off .img {
+  opacity: 0;
+  -webkit-transform: scale(0.1);
+      -ms-transform: scale(0.1);
+          transform: scale(0.1);
+}
+#port .pro li .block.off .data {
+  opacity: 0 !important;
+}
+
+aside {
+  top: 40px;
+  right: 40px;
+  bottom: 40px;
+  left: 300px;
+  position: fixed;
+  z-index: 99;
+  display: none;
+}
+aside .wp {
+  padding: 40px;
+}
+
+.aslf {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0%;
+  width: 100% !important;
+  background: #E0E0E0;
+  overflow: auto;
+  display: none;
+}
+.aslf .prev li:last-child img {
+  padding-bottom: 0;
+}
+.aslf .prev li img {
+  max-width: 100%;
+  padding-bottom: 40px;
+}
+
+.asrt {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  bottom: 0;
+  width: 40%;
+  background: #F1F1F1;
+  display: none;
+}
+.asrt .close {
+  position: absolute;
+  right: 20px;
+  font-size: 50px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.slimScrollBar {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
