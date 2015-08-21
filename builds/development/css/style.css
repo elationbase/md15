@@ -668,3 +668,20 @@ aside .wp {
   line-height: 1.4em;
   margin-bottom: 20px;
 }
+
+.svg-ani {
+  -webkit-animation: draw 3.5s infinite;
+          animation: draw 3.5s infinite;
+}
+
+@-webkit-keyframes draw {
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw {
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
