@@ -297,61 +297,6 @@ header .bottom .media li a {
   text-decoration: none;
 }
 
-#sec1 {
-  background: #3c3e40;
-  margin-bottom: 40px;
-}
-#sec1 .bgimg {
-  background-image: url(../img/bgs/img4.jpg);
-  background-color: #4e6374;
-}
-#sec1 .content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-}
-#sec1 .logo {
-  width: 15%;
-  position: absolute;
-  left: 10%;
-  margin-top: 50px;
-}
-#sec1 .copy {
-  position: absolute;
-  right: 10%;
-  bottom: 10%;
-  left: 30%;
-  z-index: 3;
-  text-align: right;
-  color: #fff;
-  text-shadow: 0 0 6px #000;
-}
-#sec1 .copy h1 {
-  color: #2cb2c4;
-  font-size: 60px;
-  border-bottom: 1px solid #2cb2c4;
-  text-align: right;
-}
-#sec1 .copy h2 {
-  color: #a7a9ac;
-  margin: 10px 0;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #a7a9ac;
-}
-#sec1 .copy h2 span {
-  display: block;
-}
-#sec1 .copy h2 span i {
-  color: #e44f26;
-}
-#sec1 .copy p {
-  line-height: 1.4em;
-  margin-bottom: 20px;
-}
-
 #sec2 .pill li {
   font-size: 12px;
   text-transform: uppercase;
@@ -627,4 +572,99 @@ aside .wp {
 .slimScrollBar {
   cursor: -webkit-grab;
   cursor: grab;
+}
+
+#hero {
+  background: #3c3e40;
+  margin-bottom: 40px;
+}
+#hero .imgs {
+  background: #a7a9ac;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#hero .imgs .full {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+}
+#hero .imgs .camera {
+  background-image: url(../img/hero/camera.png);
+}
+#hero .imgs .cups {
+  background-image: url(../img/hero/cups.png);
+}
+#hero .imgs .imac {
+  background-image: url(../img/hero/imac.png);
+}
+#hero .imgs .ipad {
+  background-image: url(../img/hero/ipad.png);
+}
+#hero .imgs .keyboard {
+  background-image: url(../img/hero/keyboard.png);
+}
+#hero .imgs .notebook {
+  background-image: url(../img/hero/notebook.png);
+}
+#hero .imgs .macbook {
+  background-image: url(../img/hero/macbook.png);
+}
+#hero .imgs .phone {
+  background-image: url(../img/hero/phone.png);
+}
+#hero .imgs .shadow {
+  background-image: url(../img/hero/shadow.png);
+}
+#hero .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+#hero .logo {
+  padding-top: 40vh;
+  width: 200px;
+  margin: auto;
+}
+#hero .copy {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  left: 30%;
+  z-index: 3;
+  text-align: right;
+  color: #fff;
+  text-shadow: 0 0 6px #000;
+}
+#hero .copy h1 {
+  color: #2cb2c4;
+  font-size: 60px;
+  border-bottom: 1px solid #2cb2c4;
+  text-align: right;
+}
+#hero .copy h2 {
+  color: #a7a9ac;
+  margin: 10px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #a7a9ac;
+}
+#hero .copy h2 span {
+  display: block;
+}
+#hero .copy h2 span i {
+  color: #e44f26;
+}
+#hero .copy p {
+  line-height: 1.4em;
+  margin-bottom: 20px;
 }

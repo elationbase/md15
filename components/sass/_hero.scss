@@ -1,0 +1,87 @@
+// _hero.scss
+
+#hero { 
+	background: $dark; 
+	margin-bottom: 40px;
+	
+	.imgs { 
+		background: $brandLight;
+		background-size: cover;
+		background-attachment: fixed;
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		.full {
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 0;
+			background-size: cover;
+		}
+		.camera {
+			background-image: url(../img/hero/camera.png);
+		}
+		.cups {
+			background-image: url(../img/hero/cups.png);
+		}
+		.imac {
+			background-image: url(../img/hero/imac.png);
+		}
+		.ipad {
+			background-image: url(../img/hero/ipad.png);
+		}
+		.keyboard {
+			background-image: url(../img/hero/keyboard.png);
+		}
+		.notebook {
+			background-image: url(../img/hero/notebook.png);
+		}
+		.macbook {
+			background-image: url(../img/hero/macbook.png);
+		}
+		.phone {
+			background-image: url(../img/hero/phone.png);
+		}
+		.shadow {
+			background-image: url(../img/hero/shadow.png);
+		}
+	}
+	
+	.content { 
+		position: absolute; 
+		top: 0; right: 0; bottom: 0; left: 0; 
+		z-index: 2; 
+	}
+	.logo { 
+		padding-top: 40vh; 
+		width: 200px;
+		margin: auto;
+	}
+	.copy { 
+		position: absolute; 
+		right: 10%; bottom: 10%; left: 30%;
+		z-index: 3; 
+		text-align: right; 
+		color: #fff; 
+		text-shadow: 0 0 6px #000;
+		h1 {
+			color: $brandBlue;
+			font-size: 60px;
+			border-bottom: 1px solid $brandBlue;
+			text-align: right;
+		}
+		h2 {
+			color: $brandLight;
+			margin: 10px 0 ;
+			padding-bottom: 15px;
+			border-bottom: 1px solid $brandLight;
+			span {
+				display: block;
+				i {
+					color: $brandOrange;
+				}
+			}
+		}
+		p {
+			line-height: 1.4em;
+			margin-bottom: 20px;
+		}
+	} 
+}   

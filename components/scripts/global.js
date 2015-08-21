@@ -19,6 +19,37 @@
 				$('header .logo').css({
 					marginTop: Math.round(( scrollVar - winH) / 5)
 				});
+				$('#hero .logo').css({
+					transform: 'translateY(' + scrollVar/2 + 'px)',
+					'-webkit-filter': 'blur(' + Math.round((scrollVar - (winH/5)) / 50) + 'px)'
+				});
+				$('.imgs').css({
+					'-webkit-filter': 'blur(' + Math.round((scrollVar - (winH/5)) / 50) + 'px)',
+				});
+				$('.macbook').css({
+					transform: 'translateX(-' + scrollVar/5 + 'px) translateY(-' + scrollVar/5 + 'px)'
+				});
+				$('.ipad').css({
+					transform: 'translateX(-' + scrollVar/5 + 'px) translateY(' + scrollVar/5 + 'px)'
+				});
+				$('.camera').css({
+					transform: 'translateX(' + scrollVar/5 + 'px) translateY(-' + scrollVar/5 + 'px)'
+				});
+				$('.imac').css({
+					transform: 'translateY(-' + scrollVar/5 + 'px)'
+				});
+				$('.keyboard').css({
+					transform: 'translateY(' + scrollVar/2 + 'px)'
+				});
+				$('.cups').css({
+					transform: 'translateX(' + scrollVar/5 + 'px) translateY(-' + scrollVar/5 + 'px)'
+				});
+				$('.notebook').css({
+					transform: 'translateX(' + scrollVar/5 + 'px) translateY(' + scrollVar/5 + 'px)'
+				});
+				$('.phone').css({
+					transform: 'translateX(' + scrollVar/3 + 'px) translateY(' + scrollVar/3 + 'px)'
+				});
 			}
 			var port = $('#port')
 			var portY = port.offset().top;
@@ -40,7 +71,7 @@
 				});
 			}
 		} else {
-			$('#sec1 .bgimg').css({
+			$('.imgs').css({
 				'-webkit-filter': 'blur(0px)',
 				'opacity': 1
 			});
@@ -72,6 +103,8 @@
 				$nav.eq(index).addClass('active');
             }
         }); 
+		
+		
 		
 		
 	}

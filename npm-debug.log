@@ -1,0 +1,192 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.13.0-pre
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/alvaro/Google Drive/md-2015/git',
+5 verbose install   [ 'gulp',
+5 verbose install     'gulp-autoprefixer',
+5 verbose install     'gulp-browserify',
+5 verbose install     'gulp-compass',
+5 verbose install     'gulp-concat',
+5 verbose install     'gulp-connect',
+5 verbose install     'gulp-if',
+5 verbose install     'gulp-imagemin',
+5 verbose install     'gulp-jsonminify',
+5 verbose install     'gulp-minify-html',
+5 verbose install     'gulp-uglify',
+5 verbose install     'gulp-util',
+5 verbose install     'if',
+5 verbose install     'imagemin-pngcrush',
+5 verbose install     'jquery',
+5 verbose install     'angular',
+5 verbose install     'velocity' ] ]
+6 info preinstall md15@1.0.0
+7 warn package.json if@2.0.0 No repository field.
+8 verbose readDependencies using package.json deps
+9 verbose already installed skipping gulp-autoprefixer@^2.3.0 /Users/alvaro/Google Drive/md-2015/git
+10 verbose already installed skipping gulp-browserify@^0.5.1 /Users/alvaro/Google Drive/md-2015/git
+11 verbose already installed skipping gulp-compass@^2.0.4 /Users/alvaro/Google Drive/md-2015/git
+12 verbose already installed skipping gulp-concat@^2.5.2 /Users/alvaro/Google Drive/md-2015/git
+13 verbose already installed skipping gulp-connect@^2.2.0 /Users/alvaro/Google Drive/md-2015/git
+14 verbose already installed skipping gulp-if@^1.2.5 /Users/alvaro/Google Drive/md-2015/git
+15 verbose already installed skipping gulp-imagemin@^2.2.1 /Users/alvaro/Google Drive/md-2015/git
+16 verbose already installed skipping gulp-jsonminify@^1.0.0 /Users/alvaro/Google Drive/md-2015/git
+17 verbose already installed skipping gulp-minify-html@^1.0.2 /Users/alvaro/Google Drive/md-2015/git
+18 verbose already installed skipping gulp-uglify@^1.2.0 /Users/alvaro/Google Drive/md-2015/git
+19 verbose already installed skipping gulp-util@^3.0.4 /Users/alvaro/Google Drive/md-2015/git
+20 verbose already installed skipping if@^2.0.0 /Users/alvaro/Google Drive/md-2015/git
+21 verbose already installed skipping imagemin-pngcrush@^4.1.0 /Users/alvaro/Google Drive/md-2015/git
+22 verbose already installed skipping jquery@^2.1.4 /Users/alvaro/Google Drive/md-2015/git
+23 verbose cache add [ 'angular@1.4.4', null ]
+24 verbose cache add name=undefined spec="angular@1.4.4" args=["angular@1.4.4",null]
+25 verbose parsed url { protocol: null,
+25 verbose parsed url   slashes: null,
+25 verbose parsed url   auth: null,
+25 verbose parsed url   host: null,
+25 verbose parsed url   port: null,
+25 verbose parsed url   hostname: null,
+25 verbose parsed url   hash: null,
+25 verbose parsed url   search: null,
+25 verbose parsed url   query: null,
+25 verbose parsed url   pathname: 'angular@1.4.4',
+25 verbose parsed url   path: 'angular@1.4.4',
+25 verbose parsed url   href: 'angular@1.4.4' }
+26 verbose cache add [ 'velocity@^1.2.2', null ]
+27 verbose cache add name=undefined spec="velocity@^1.2.2" args=["velocity@^1.2.2",null]
+28 verbose parsed url { protocol: null,
+28 verbose parsed url   slashes: null,
+28 verbose parsed url   auth: null,
+28 verbose parsed url   host: null,
+28 verbose parsed url   port: null,
+28 verbose parsed url   hostname: null,
+28 verbose parsed url   hash: null,
+28 verbose parsed url   search: null,
+28 verbose parsed url   query: null,
+28 verbose parsed url   pathname: 'velocity@%5E1.2.2',
+28 verbose parsed url   path: 'velocity@%5E1.2.2',
+28 verbose parsed url   href: 'velocity@%5E1.2.2' }
+29 verbose already installed skipping gulp@^3.9.0 /Users/alvaro/Google Drive/md-2015/git
+30 verbose cache add name="angular" spec="1.4.4" args=["angular","1.4.4"]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: '1.4.4',
+31 verbose parsed url   path: '1.4.4',
+31 verbose parsed url   href: '1.4.4' }
+32 verbose addNamed [ 'angular', '1.4.4' ]
+33 verbose addNamed [ '1.4.4', '1.4.4' ]
+34 verbose cache add name="velocity" spec="^1.2.2" args=["velocity","^1.2.2"]
+35 verbose parsed url { protocol: null,
+35 verbose parsed url   slashes: null,
+35 verbose parsed url   auth: null,
+35 verbose parsed url   host: null,
+35 verbose parsed url   port: null,
+35 verbose parsed url   hostname: null,
+35 verbose parsed url   hash: null,
+35 verbose parsed url   search: null,
+35 verbose parsed url   query: null,
+35 verbose parsed url   pathname: '%5E1.2.2',
+35 verbose parsed url   path: '%5E1.2.2',
+35 verbose parsed url   href: '%5E1.2.2' }
+36 verbose addNamed [ 'velocity', '^1.2.2' ]
+37 verbose addNamed [ null, '>=1.2.2-0 <2.0.0-0' ]
+38 silly lockFile bd48aeea-angular-1-4-4 angular@1.4.4
+39 verbose lock angular@1.4.4 /Users/alvaro/.npm/bd48aeea-angular-1-4-4.lock
+40 silly lockFile ab06dbcb-velocity-1-2-2 velocity@^1.2.2
+41 verbose lock velocity@^1.2.2 /Users/alvaro/.npm/ab06dbcb-velocity-1-2-2.lock
+42 silly addNameRange { name: 'velocity', range: '>=1.2.2-0 <2.0.0-0', hasData: false }
+43 verbose request where is /velocity
+44 verbose request registry https://registry.npmjs.org/
+45 verbose request id 0589332e9e534166
+46 verbose url raw /velocity
+47 verbose url resolving [ 'https://registry.npmjs.org/', './velocity' ]
+48 verbose url resolved https://registry.npmjs.org/velocity
+49 verbose request where is https://registry.npmjs.org/velocity
+50 info trying registry request attempt 1 at 14:53:37
+51 verbose etag "2M5TWK7QD1HBBB4IHXBQZJSWV"
+52 http GET https://registry.npmjs.org/velocity
+53 verbose request where is /angular
+54 verbose request registry https://registry.npmjs.org/
+55 verbose url raw /angular
+56 verbose url resolving [ 'https://registry.npmjs.org/', './angular' ]
+57 verbose url resolved https://registry.npmjs.org/angular
+58 verbose request where is https://registry.npmjs.org/angular
+59 info trying registry request attempt 1 at 14:53:37
+60 verbose etag "16L85CKN94NTTT0XCWLX71OZE"
+61 http GET https://registry.npmjs.org/angular
+62 http 304 https://registry.npmjs.org/angular
+63 silly registry.get cb [ 304,
+63 silly registry.get   { date: 'Thu, 20 Aug 2015 18:53:26 GMT',
+63 silly registry.get     via: '1.1 varnish',
+63 silly registry.get     'cache-control': 'max-age=60',
+63 silly registry.get     etag: '"16L85CKN94NTTT0XCWLX71OZE"',
+63 silly registry.get     age: '4',
+63 silly registry.get     connection: 'close',
+63 silly registry.get     'x-served-by': 'cache-atl6227-ATL',
+63 silly registry.get     'x-cache': 'HIT',
+63 silly registry.get     'x-cache-hits': '1',
+63 silly registry.get     'x-timer': 'S1440096806.361280,VS0,VE8',
+63 silly registry.get     vary: 'Accept' } ]
+64 verbose etag https://registry.npmjs.org/angular from cache
+65 silly lockFile bd48aeea-angular-1-4-4 angular@1.4.4
+66 silly lockFile bd48aeea-angular-1-4-4 angular@1.4.4
+67 http 304 https://registry.npmjs.org/velocity
+68 silly registry.get cb [ 304,
+68 silly registry.get   { date: 'Thu, 20 Aug 2015 18:53:26 GMT',
+68 silly registry.get     via: '1.1 varnish',
+68 silly registry.get     'cache-control': 'max-age=60',
+68 silly registry.get     etag: '"2M5TWK7QD1HBBB4IHXBQZJSWV"',
+68 silly registry.get     age: '0',
+68 silly registry.get     connection: 'close',
+68 silly registry.get     'x-served-by': 'cache-atl6224-ATL',
+68 silly registry.get     'x-cache': 'MISS',
+68 silly registry.get     'x-cache-hits': '0',
+68 silly registry.get     'x-timer': 'S1440096806.362111,VS0,VE58',
+68 silly registry.get     vary: 'Accept' } ]
+69 verbose etag https://registry.npmjs.org/velocity from cache
+70 silly addNameRange number 2 { name: 'velocity', range: '>=1.2.2-0 <2.0.0-0', hasData: true }
+71 silly addNameRange versions [ 'velocity',
+71 silly addNameRange   [ '0.0.1',
+71 silly addNameRange     '0.3.0',
+71 silly addNameRange     '0.4.0',
+71 silly addNameRange     '0.5.0',
+71 silly addNameRange     '0.5.1',
+71 silly addNameRange     '0.5.3',
+71 silly addNameRange     '0.5.4',
+71 silly addNameRange     '0.5.5',
+71 silly addNameRange     '0.5.6',
+71 silly addNameRange     '0.5.7',
+71 silly addNameRange     '0.5.10',
+71 silly addNameRange     '0.6.0',
+71 silly addNameRange     '0.6.2',
+71 silly addNameRange     '0.6.4',
+71 silly addNameRange     '0.6.6',
+71 silly addNameRange     '0.6.7',
+71 silly addNameRange     '0.6.9',
+71 silly addNameRange     '0.6.11',
+71 silly addNameRange     '0.7.0',
+71 silly addNameRange     '0.7.1',
+71 silly addNameRange     '0.7.2' ] ]
+72 silly lockFile ab06dbcb-velocity-1-2-2 velocity@^1.2.2
+73 silly lockFile ab06dbcb-velocity-1-2-2 velocity@^1.2.2
+74 error notarget No compatible version found: velocity@'>=1.2.2-0 <2.0.0-0'
+74 error notarget Valid install targets:
+74 error notarget ["0.0.1","0.3.0","0.4.0","0.5.0","0.5.1","0.5.3","0.5.4","0.5.5","0.5.6","0.5.7","0.5.10","0.6.0","0.6.2","0.6.4","0.6.6","0.6.7","0.6.9","0.6.11","0.7.0","0.7.1","0.7.2"]
+74 error notarget
+74 error notarget This is most likely not a problem with npm itself.
+74 error notarget In most cases you or one of your dependencies are requesting
+74 error notarget a package version that doesn't exist.
+75 error System Darwin 14.4.0
+76 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+77 error cwd /Users/alvaro/Google Drive/md-2015/git
+78 error node -v v0.13.0-pre
+79 error npm -v 1.4.28
+80 error code ETARGET
+81 verbose exit [ 1, true ]

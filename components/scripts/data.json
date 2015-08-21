@@ -1,0 +1,113 @@
+/*
+{
+    "skills":
+	[
+			{
+				"name" : "html",
+				"type" : "awe"
+			},
+			{
+				"name" : "css",
+				"type" : "awe"
+			},
+			{
+				"name" : "js",
+				"type" : "Cool"
+			},
+			{
+				"name" : "jq",
+				"type" : "Cool"
+			},
+			{
+				"name" : "ang",
+				"type" : "Cool"
+			},
+			{
+				"name" : "fire",
+				"type" : "ok"
+			}
+	],
+    "skills2":
+	[
+			{
+				"name" : "html",
+				"type" : "awe"
+			},
+			{
+				"name" : "css",
+				"type" : "awe"
+			},
+			{
+				"name" : "js",
+				"type" : "Cool"
+			},
+			{
+				"name" : "jq",
+				"type" : "Cool"
+			},
+			{
+				"name" : "ang",
+				"type" : "Cool"
+			},
+			{
+				"name" : "fire",
+				"type" : "ok"
+			}
+	]
+  }
+
+*/
+/*
+{
+  "hero": [
+    {
+      "h1": "Al Montero"
+    },
+    {
+      "known": [
+        {
+          "id": "Logic UI Designer +"
+        },
+        {
+          "id": "Creative Front-end Developer +"
+        }
+      ]
+    },
+    {
+      "description": [
+        {
+          "id": "Al Montero is a Spanish award-winning web designer & front-end developer raised in Madrid & currently living in Miami."
+        },
+        {
+          "id": "He had the privilege of working with companies such as IBM Watson, Discovery Networks, Redskins & more."
+        },
+        {
+          "id": "Al is building innovative products as a Software Engeneer at Kaplan Inc."
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "html",
+      "type": "Cool"
+    },
+    {
+      "name": "css",
+      "type": "Glazed"
+    },
+    {
+      "name": "js",
+      "type": "Sugar"
+    },
+    {
+      "name": "angular",
+      "type": "Powdered Sugar"
+    },
+    {
+      "name": "firebase",
+      "type": "Chocolate with Sprinkles"
+    }
+  ]
+}
+*/
