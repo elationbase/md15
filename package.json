@@ -22,9 +22,8 @@
     "gulp-util": "^3.0.4",
     "if": "^2.0.0",
     "imagemin-pngcrush": "^4.1.0",
-    "jquery": "^2.1.4",
-    "jquery": "^2.1.4",
-	"angular": "1.4.4",
-	"velocity": "^1.2.2"
+    "jquery": "^2.2.4",
+    "angular": "1.4.4",
+    "velocity": "^1.2.2"
   }
 }
